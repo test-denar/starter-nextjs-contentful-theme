@@ -34,7 +34,7 @@ npm install http-server -g
 http-server out
 ```
 
-## Local Development 🙏
+## Contributing 🙏
 
 To contribute to this theme, please follow the following steps:
 
