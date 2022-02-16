@@ -1863,7 +1863,7 @@
         "id": "Config",
         "type": "ContentType",
         "createdAt": "2022-02-03T21:46:02.578Z",
-        "updatedAt": "2022-02-03T23:56:07.776Z",
+        "updatedAt": "2022-02-16T23:27:29.924Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -1871,8 +1871,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 15,
-        "publishedAt": "2022-02-03T23:56:07.776Z",
+        "publishedVersion": 17,
+        "publishedAt": "2022-02-16T23:27:29.924Z",
         "firstPublishedAt": "2022-02-03T21:46:08.295Z",
         "createdBy": {
           "sys": {
@@ -1888,8 +1888,8 @@
             "id": "2ajScCTNIENQTfx9G9k9g9"
           }
         },
-        "publishedCounter": 8,
-        "version": 16,
+        "publishedCounter": 9,
+        "version": 18,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -1950,7 +1950,7 @@
         },
         {
           "id": "titleSuffix",
-          "name": "titleSuffix",
+          "name": "Suffix for page titles",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -1961,7 +1961,7 @@
         },
         {
           "id": "defaultSocialImage",
-          "name": "defaultSocialImage",
+          "name": "Default image for social sharing",
           "type": "Link",
           "localized": false,
           "required": false,
@@ -1973,7 +1973,7 @@
         },
         {
           "id": "defaultMetaTags",
-          "name": "defaultMetaTags",
+          "name": "Default additional meta tags",
           "type": "Array",
           "localized": false,
           "required": false,
@@ -7768,7 +7768,7 @@
         "id": "MetaTag",
         "type": "ContentType",
         "createdAt": "2022-02-03T22:02:13.787Z",
-        "updatedAt": "2022-02-03T22:16:46.308Z",
+        "updatedAt": "2022-02-16T23:25:51.105Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -7776,8 +7776,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2022-02-03T22:16:46.308Z",
+        "publishedVersion": 11,
+        "publishedAt": "2022-02-16T23:25:51.105Z",
         "firstPublishedAt": "2022-02-03T22:02:14.279Z",
         "createdBy": {
           "sys": {
@@ -7793,8 +7793,8 @@
             "id": "2ajScCTNIENQTfx9G9k9g9"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 6,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -7809,7 +7809,7 @@
       "fields": [
         {
           "id": "property",
-          "name": "property",
+          "name": "Property",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -7841,7 +7841,7 @@
         },
         {
           "id": "content",
-          "name": "content",
+          "name": "Content",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -7864,7 +7864,7 @@
         "id": "Seo",
         "type": "ContentType",
         "createdAt": "2022-02-03T22:02:38.143Z",
-        "updatedAt": "2022-02-16T03:15:13.540Z",
+        "updatedAt": "2022-02-16T23:24:52.415Z",
         "environment": {
           "sys": {
             "id": "master",
@@ -7872,8 +7872,8 @@
             "linkType": "Environment"
           }
         },
-        "publishedVersion": 9,
-        "publishedAt": "2022-02-16T03:15:13.540Z",
+        "publishedVersion": 11,
+        "publishedAt": "2022-02-16T23:24:52.415Z",
         "firstPublishedAt": "2022-02-03T22:02:38.569Z",
         "createdBy": {
           "sys": {
@@ -7889,8 +7889,8 @@
             "id": "2ajScCTNIENQTfx9G9k9g9"
           }
         },
-        "publishedCounter": 5,
-        "version": 10,
+        "publishedCounter": 6,
+        "version": 12,
         "publishedBy": {
           "sys": {
             "type": "Link",
@@ -7905,7 +7905,7 @@
       "fields": [
         {
           "id": "metaTitle",
-          "name": "Meta Title",
+          "name": "Title meta tag (overrides title)",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -7916,7 +7916,7 @@
         },
         {
           "id": "metaDescription",
-          "name": "Meta Description",
+          "name": "Description meta tag",
           "type": "Symbol",
           "localized": false,
           "required": false,
@@ -7927,7 +7927,7 @@
         },
         {
           "id": "addTitleSuffix",
-          "name": "Add Title Suffix",
+          "name": "Add title suffix",
           "type": "Boolean",
           "localized": false,
           "required": false,
@@ -7938,7 +7938,7 @@
         },
         {
           "id": "socialImage",
-          "name": "Social Image",
+          "name": " Image for social sharing",
           "type": "Link",
           "localized": false,
           "required": false,
@@ -7950,7 +7950,7 @@
         },
         {
           "id": "metaTags",
-          "name": "Meta Tags",
+          "name": "Additional meta tags",
           "type": "Array",
           "localized": false,
           "required": false,
@@ -8860,7 +8860,7 @@
             "linkType": "Space"
           }
         },
-        "version": 16,
+        "version": 18,
         "createdAt": "2022-02-03T21:46:08.329Z",
         "createdBy": {
           "sys": {
@@ -8869,7 +8869,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2022-02-03T23:56:09.359Z",
+        "updatedAt": "2022-02-16T23:27:30.855Z",
         "updatedBy": {
           "sys": {
             "id": "2ajScCTNIENQTfx9G9k9g9",
@@ -8910,16 +8910,30 @@
         },
         {
           "fieldId": "titleSuffix",
+          "settings": {
+            "helpText": "Suffix to append to the title tag of all pages, except in pages where the this behavior is disabled (e.g. typically the home page should have the site name as a prefix)"
+          },
           "widgetId": "singleLine",
           "widgetNamespace": "builtin"
         },
         {
           "fieldId": "defaultSocialImage",
+          "settings": {
+            "helpText": "Default image to use for the og:image meta tag in all pages, except in pages that define another image.",
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
           "widgetId": "assetLinkEditor",
           "widgetNamespace": "builtin"
         },
         {
           "fieldId": "defaultMetaTags",
+          "settings": {
+            "helpText": "Additional meta tags to set as default in all pages. Tags defined here are low-priority: they may be overriden by page-level settings.",
+            "bulkEditing": false,
+            "showLinkEntityAction": true,
+            "showCreateEntityAction": true
+          },
           "widgetId": "entryLinksEditor",
           "widgetNamespace": "builtin"
         }
@@ -11557,7 +11571,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 12,
         "createdAt": "2022-02-03T22:02:14.336Z",
         "createdBy": {
           "sys": {
@@ -11566,7 +11580,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2022-02-03T22:16:47.200Z",
+        "updatedAt": "2022-02-16T23:25:52.040Z",
         "updatedBy": {
           "sys": {
             "id": "2ajScCTNIENQTfx9G9k9g9",
@@ -11613,7 +11627,7 @@
             "linkType": "Space"
           }
         },
-        "version": 10,
+        "version": 12,
         "createdAt": "2022-02-03T22:02:38.618Z",
         "createdBy": {
           "sys": {
@@ -11622,7 +11636,7 @@
             "linkType": "User"
           }
         },
-        "updatedAt": "2022-02-16T03:15:14.401Z",
+        "updatedAt": "2022-02-16T23:24:53.160Z",
         "updatedBy": {
           "sys": {
             "id": "2ajScCTNIENQTfx9G9k9g9",
