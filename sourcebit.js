@@ -20,7 +20,7 @@ module.exports = {
                  * 1. It can be found in User Account Settings > Tokens > Personal Access Tokens - https://app.contentful.com/account/profile/cma_tokens
                  * 2. It can be found in Contentful Space Settings > API Keys > Content management tokens tab > Generate personal token - https://app.contentful.com/spaces/4usfxq71utl8/api/cma_tokens
                  *
-                 * The accessToken can used instead of the deliveryToken & previewToken. If the other keys are not found it will generate them.
+                 * The accessToken can be used instead of the deliveryToken & previewToken. If the other keys are not found it will generate them.
                  * can be used to run `npm run build` and `npm run dev`
                  * must be used to import/export data using `./contentful/import.js` and `./contentful/export.js`
                  **/
