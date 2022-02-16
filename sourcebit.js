@@ -13,17 +13,27 @@ module.exports = {
         {
             module: require('sourcebit-source-contentful'),
             options: {
-                // accessToken is found in Account Settings > Tokens > Personal Access Tokens - https://app.contentful.com/account/profile/cma_tokens
-                // accessToken is optional to run dev server
+                /**
+                 * accessToken ( Personal Access Token )
+                 *
+                 * The accessToken is also referred to as the Personal Access Token and can be generated in Contentful in several places.
+                 * 1. It can be found in User Account Settings > Tokens > Personal Access Tokens - https://app.contentful.com/account/profile/cma_tokens
+                 * 2. It can be found in Contentful Space Settings > API Keys > Content management tokens tab > Generate personal token - https://app.contentful.com/spaces/4usfxq71utl8/api/cma_tokens
+                 *
+                 * The accessToken can used instead of the deliveryToken & previewToken. If the other keys are not found it will generate them.
+                 * can be used to run `npm run build` and `npm run dev`
+                 **/
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
-                // deliveryToken is found in Contentful Settings > API Keys > Content Delivery API - access token
-                // deliveryToken is optional to run dev server
+
+                // deliveryToken is found in the Contentful Space Settings > API Keys > Content delivery / preview tokens > Content Delivery API - access token
+                // can be used to run `npm run build`
                 deliveryToken: process.env.CONTENTFUL_DELIVERY_TOKEN,
-                // previewToken is found in Contentful Settings > API Keys > Content Preview API - access token 
-                // previewToken is required to run dev server
+
+                // previewToken is found in Contentful Space Settings > API Keys > Content delivery / preview tokens > Content Preview API - access token
+                // can be used to run `npm run dev`
                 previewToken: process.env.CONTENTFUL_PREVIEW_TOKEN,
-                // spaceId is found in Contentful Settings > General settings > Space ID
-                // spaceId is required to run dev server
+
+                // spaceId is found in Contentful Space Settings > General settings > Space ID
                 spaceId: process.env.CONTENTFUL_SPACE_ID,
                 environment: process.env.CONTENTFUL_ENVIRONMENT || 'master',
                 preview: isDev,
