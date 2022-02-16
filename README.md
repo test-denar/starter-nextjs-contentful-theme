@@ -42,46 +42,44 @@ To contribute to this theme, please follow the following steps:
 
 2. Create a new Space in Contentful
 
-3. Create new Contentful Personal Access Tokens [here](https://app.contentful.com/account/profile/cma_tokens/)
+3. Create new Contentful **Personal Access Token** [here](https://app.contentful.com/account/profile/cma_tokens/)
 
-4. Install dependencies
+4. Define the following environment variables. Replace the `{SPACE_ID}` with your Space ID and the `{PERSONAL_ACCESS_TOKEN}` with the new Contentful Personal Access Token
 
-   ```shell
+   ```
+   export CONTENTFUL_SPACE_ID={SPACE_ID}
+   export CONTENTFUL_ACCESS_TOKEN={PERSONAL_ACCESS_TOKEN}
+   ```
+
+5. Install dependencies
+
+   ```
    npm install
    ```
 
-5. Import the Contentful data stored in the `contentful/export.json` file to the new space by running the following command. Replace the `<management_token>` with your Personal Access Token and the `<space_id>` with the new space ID.
+6. Import the Contentful data stored in the `contentful/export.json` file to the new space by running the following command.
 
-   ```shell
-   ./contentful/import.js <management_token> <space_id>
+   ```
+   node ./contentful/import.js
    ```
 
-6. Create "**Content Preview API - Access Token**" for the new space via Contentful app "Settings" => "API Keys" => "Content delivery / preview tokens" => "Add API Key".
+7. Lastly, run the Next.js development server:
 
-7. Define the following environment variables to allow Next.js to fetch the content from Contentful when developing or building the site. Replace the `{SPACE_ID}` with your Space ID and the `{CPA}` with the new **Content Preview API - Access Token**.
-
-   ```shell
-   export CONTENTFUL_SPACE_ID={SPACE_ID}
-   export CONTENTFUL_PREVIEW_TOKEN={CPA}
    ```
-
-8. Lastly, run the Next.js development server:
-
-   ```shell
    npm run dev
    ```
 
    Navigate to [http://localhost:3000](http://localhost:3000) to see the site.
 
-9. Now you can update site code, and the content in Contentful. The browser will automatically live-update your changes.
+8. Now you can update site code, and the content in Contentful. The browser will automatically live-update your changes.
 
-10. Once you finish updating the code and contents, export the contents back to the `contentful/export.json` file by running the following command. Replace the `<management_token>` with your Personal Access Token and the `<space_id>` with the new space ID.
+9. Once you finish updating the code and contents, export the contents back to the `contentful/export.json` file by running the following command.
 
-    ```shell
-    ./contentful/export.js <management_token> <space_id>
-    ```
+   ```
+   node ./contentful/export.js
+   ```
 
-11. Commit, push and submit a pull-request 🎉
+10. Commit, push and submit a pull-request 🎉
 
 ## Working with types
 

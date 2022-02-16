@@ -22,6 +22,7 @@ module.exports = {
                  *
                  * The accessToken can used instead of the deliveryToken & previewToken. If the other keys are not found it will generate them.
                  * can be used to run `npm run build` and `npm run dev`
+                 * must be used to import/export data using `./contentful/import.js` and `./contentful/export.js`
                  **/
                 accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
 
