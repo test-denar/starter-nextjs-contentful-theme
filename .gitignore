@@ -8,6 +8,7 @@
 # stackbit
 .sourcebit-nextjs-cache.json
 .stackbit/dynamic-components.js
+/.cache
 
 # testing
 /coverage
