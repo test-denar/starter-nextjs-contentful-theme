@@ -40,3 +40,6 @@ yarn-error.log*
 *.code-workspace
 .idea
 /content/data/style.json
+
+# Contentful
+.cache

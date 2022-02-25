@@ -4,12 +4,10 @@ Welcome to your new project created with Stackbit!
 
 Here are a few useful tips & links:
 
-
 ## Set up
 
 1. If you haven't yet transferred this project to your GitHub account, click on the **Gear** icon in the visual editor to open **Project Settings** and start the transfer. [Learn More](https://docs.stackbit.com/how-to-guides/transfer-repo/).
 1. Once the repository is in your account, the Project Settings window will show you the commands to run for setting up your local environment. [Learn More](https://docs.stackbit.com/how-to-guides/local-development/).
-
 
 ## Learn the basics
 
@@ -17,11 +15,9 @@ Here are a few useful tips & links:
 1. To go deeper into how things work, head to the [Conceptual Guides](https://docs.stackbit.com/conceptual-guides/).
 1. For more concise, practical information see the [How-to Guides](https://docs.stackbit.com/how-to-guides/).
 
-
 ## Get answers
 
 [Join us on Discord](https://discord.gg/HUNhjVkznH) for community support.
-
 
 ## Building for production 🏗
 
@@ -37,7 +33,6 @@ The generated site will be written to the `out` folder. The contents of this fol
 npm install http-server -g
 http-server out
 ```
-
 
 ## Contributing 🙏
 
@@ -88,7 +83,6 @@ To contribute to this theme, please follow the following steps:
 
 11. Commit, push and submit a pull-request 🎉
 
-
 ## Working with types
 
 When you update content models in Contentful, run `npm run generate-types` with `CONTENTFUL_ACCESS_TOKEN` and `CONTENTFUL_SPACE_ID` environment variables to generate types from Contentful content models. The types will be stored at `src/types/contentful.d.ts`.
@@ -97,7 +91,6 @@ Contentful types re-mapped into internal Sourcebit types inside `src/types/sourc
 
 1. Remove Contentful specific fields such as `sys` and `metadata` and unwrap Contentful `fields` for simplicity.
 2. Add `__metadata` introduced by Sourcebit.
-
 
 ## Learn More 📚
 

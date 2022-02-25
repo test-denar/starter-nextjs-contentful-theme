@@ -2,7 +2,7 @@
 
 const contentfulExport = require('contentful-export');
 
-const managementToken = process.env.CONTENTFUL_MANAGEMENT_TOKEN || process.argv[2];
+const managementToken = process.env.CONTENTFUL_ACCESS_TOKEN || process.argv[2];
 const spaceId = process.env.CONTENTFUL_SPACE_ID || process.argv[3];
 const environmentId = process.env.CONTENTFUL_ENVIRONMENT || process.argv[4] || 'master';
 
