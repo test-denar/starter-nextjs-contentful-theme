@@ -1,5 +1,10 @@
 name: PostFeedLayout
+fieldGroups:
+  - name: seo
+    label: SEO
 fields:
+  - name: seo
+    group: seo
   - name: postFeed
     readOnly: true
     default:
