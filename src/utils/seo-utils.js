@@ -1,5 +1,4 @@
 export function seoGenerateMetaTags(page, site) {
-
     let pageMetaTags = {};
 
     if (site.defaultMetaTags?.length) {
@@ -8,14 +7,14 @@ export function seoGenerateMetaTags(page, site) {
         });
     }
 
-    const seoTitle = seoGenerateTitle(page, site)
-    const ogImage = seoGenerateOgImage(page, site)
-    
+    const seoTitle = seoGenerateTitle(page, site);
+    const ogImage = seoGenerateOgImage(page, site);
+
     pageMetaTags = {
         ...pageMetaTags,
         ...(seoTitle && { 'og:title': seoTitle }),
-        ...(ogImage && { 'og:image': ogImage }),
-    }
+        ...(ogImage && { 'og:image': ogImage })
+    };
 
     if (page.seo?.metaTags?.length) {
         page.seo?.metaTags.forEach((metaTag) => {
@@ -38,8 +37,8 @@ export function seoGenerateMetaTags(page, site) {
 }
 
 export function seoGenerateTitle(page, site) {
-    let title = page.metaTitle ? page.metaTitle : page.title;
-    if (site.titleSuffix && page.addTitleSuffix !== false) {
+    let title = page.seo?.metaTitle ? page.seo?.metaTitle : page.title;
+    if (site.titleSuffix && page.seo?.addTitleSuffix !== false) {
         title = `${title} - ${site.titleSuffix}`;
     }
     return title;
