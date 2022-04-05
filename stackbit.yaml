@@ -27,7 +27,7 @@ modelsSource:
   type: contentful
 
 # These models are merged with Contentful models
-models:
+models_!:
   PageLayout:
     type: page
     urlPath: '/{slug}'
